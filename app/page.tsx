@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
      
-     
+      
       <div className="  items-center text-center justify-between font-mono text-3xl lg:flex">
        
       <h1 className=' text-center'>Da li <span className='font-bold'>Jovana</span> voli <span className='font-bold'>Dragu</span> ?</h1>
