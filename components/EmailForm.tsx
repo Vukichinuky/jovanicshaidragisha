@@ -14,7 +14,7 @@ function EmailForm() {
       .then((result) => {
           console.log(result.text);
           if (form.question3 === 'yes') {
-            window.alert('06.12.2023 u 6 da odemo na dejt budi spremna');
+            window.alert('06.12.2023 u 21:00 da odemo na dejt cekacu te u kamenici');
           }
       }, (error) => {
           console.log(error.text);
