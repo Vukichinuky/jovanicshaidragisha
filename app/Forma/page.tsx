@@ -15,23 +15,24 @@ function Forma() {
     setSubmitted(true);
   };
   return (
-    <div className='flex-col mt-56 gap-28 flex  items-center justify-center'>
+    <div >
       {!submitted && (
         <>
-          <div className='flex flex-col items-center gap-7 justify-center'>
-  <label className='text-sm font-semibold'>
-    Koja je omiljena hrana dragi na celom svetu?
-  </label>
-  <input type="text" className='border p-2 rounded-md ml-4' value={answer1} onChange={e => setAnswer1(e.target.value)} />
-</div>
-<div className='flex flex-col gap-7 items-center justify-center'>
-  <label className='text-sm font-semibold'>
-    Koji je dragi pin na telefonu
-  </label>
-  <input type="text" className='border p-2 rounded-md ml-4' value={answer2} onChange={e => setAnswer2(e.target.value)} />
-</div>
-          <button className=' rounded-lg border border-transparent border-gray-300 px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30' onClick={handleSubmit}>Nastavi</button>
-        </>
+         <form className='flex-col mt-56 gap-28 flex  items-center justify-center' onSubmit={handleSubmit}>
+  <div className='flex flex-col items-center gap-7 justify-center'>
+    <label className='text-sm font-semibold'>
+      Koja je omiljena hrana dragi na celom svetu?
+    </label>
+    <input type="text" className='border p-2 rounded-md ml-4' value={answer1} onChange={e => setAnswer1(e.target.value)} />
+  </div>
+  <div className='flex flex-col gap-7 items-center justify-center'>
+    <label className='text-sm font-semibold'>
+      Koji je dragi pin na telefonu
+    </label>
+    <input type="text" className='border p-2 rounded-md ml-4' value={answer2} onChange={e => setAnswer2(e.target.value)} />
+  </div>
+  <button type="submit" className=' rounded-lg border border-transparent border-gray-300 px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'>Nastavi</button>
+</form> </>
       )}
       {submitted && (
         isCorrect ? (
