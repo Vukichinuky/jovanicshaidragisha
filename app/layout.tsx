@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Jovana i Drago',
   description: 'Jovana i Drago',
   openGraph:{
-  image: '/IMG_6122.JPG',}
+  openGraphImage: '/IMG_6122.JPG',}
 }
 
 export default function RootLayout({
