@@ -7,8 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Jovana i Drago',
   description: 'Jovana i Drago',
-  openGraph:{
-  openGraphImage: '/IMG_6122.JPG',}
+  
 }
 
 export default function RootLayout({
